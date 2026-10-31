@@ -47,7 +47,7 @@ app.post('/api/ai/match-resources', async (req, res) => {
         eligibility: r.eligibilityRequirements
       }));
 
-      const prompt = `You are the AI Assistant for ShareSpace AI at Poornima College of Engineering (Jaipur, Rajasthan, India).
+      const prompt = `You are the AI Assistant for ShareSpace AI at Nexora University (Jaipur, Rajasthan, India).
 A student is requesting resources with this requirement:
 "${query}"
 
@@ -106,7 +106,7 @@ Respond in valid JSON format only, matching this structure:
 
   return res.json({
     success: true,
-    recommendationSummary: `Based on your request "${query.slice(0, 60)}...", we matched ${matchedIds.length} technical resource(s) at Poornima College of Engineering, Jaipur.`,
+    recommendationSummary: `Based on your request "${query.slice(0, 60)}...", we matched ${matchedIds.length} technical resource(s) at Nexora University, Jaipur.`,
     matchedResourceIds: matchedIds,
     matchReasons: matchedIds.map((id: string) => {
       const item = (availableResources || []).find((r: any) => r.id === id);
