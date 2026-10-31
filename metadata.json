@@ -1,0 +1,6 @@
+{
+  "name": "ShareSpace AI – Poornima College of Engineering, Jaipur",
+  "description": "Smart resource sharing platform connecting students and faculty at Poornima College of Engineering, Jaipur with underused laboratories, workstations, cameras, projectors, and 3D printers. (Demonstration Environment)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
